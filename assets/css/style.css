@@ -1,0 +1,503 @@
+:root{
+    --color-background: #EEEEEE;
+    --font-main: 'Roboto', sans-serif;
+    --main-color: #00B2FF;
+    --color-heart: #FF007A;
+    --color-purple: #8F00FF;
+    --border-post: 10px;
+    --shadow-post: 0px 0px 5px rgb(205, 205, 205);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: var(--color-background);
+    font-family: var(--font-main);
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(187, 187, 187);
+}
+#container{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+/* Phần side bar trái */
+#side-bar_left{
+    width: 17%;
+    height: 100%;
+    /* background-color: #fff; */
+    padding: 17px 17px;
+    /* position: fixed; */
+}
+.logo img{
+    width: 69px;
+    height: 69px;
+    cursor: pointer;
+}
+.logo img:hover{
+    box-shadow: 0px 0px 10px blue;
+}
+.fix_position_side_bar{
+    position: fixed;
+}
+.menu-control{
+}
+.menu-control ul{
+    list-style: none;
+}
+.menu-control ul li{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 65px;
+}
+.menu-control ul li:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.menu-control ul li .icon-menu{
+    font-size: 27px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.menu-control ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding-top: 3px;
+}
+.menu-control ul li:hover a{
+    color: #fff;
+}
+.addPost_button .btn_create_post{
+    width: 100%;
+    height: 40px;
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.addPost_button .btn_create_post_icon{
+    width: 100%;
+    height: 40px;
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    visibility: hidden;
+}
+.addPost_button button:hover{
+    background-color: #006590;
+    cursor: pointer;
+}
+.menu-control ul li{
+    position: relative;
+}
+.count_notification{
+    width: 22px;
+    height: 22px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50px;
+    line-height: 22px;
+    padding-left: 3px;
+    font-size: 14px;
+    position: absolute;
+    margin-top: -41px;
+    margin-left: 10px;
+}
+
+/* Phần nội dung */
+#contents{
+    width: 60%;
+    /* margin-left: 275px; */
+    position: relative;
+}
+.top-content{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    padding: 12px 12px;
+    display:flex;
+    justify-content: space-between;
+    border-radius: var(--border-post);
+    box-shadow: var(--shadow-post);
+}
+.top-content .search input{
+    width: 350px;
+    height: 40px;
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0 50px;
+    margin-top: 2px;
+}
+.top-content .search .icon-search{
+    width: 23px;
+    position: absolute;
+    padding-top: 11px;
+    margin-left: 10px;
+}
+.personal-page{
+    display: flex;
+}
+.personal-page .user-name{
+    line-height: 46px;
+    padding-right: 10px;
+}
+.personal-page a{
+    text-decoration: none;
+    color: #000;
+}
+.personal-page a:hover{
+    color: var(--main-color);
+}
+.personal-page img{
+    width: 46px;
+    height: 46px;
+}
+/* Bài viết */
+.posts{
+    width: 100%;
+    height: 540px;
+    border-radius: var(--border-post);
+    margin-top: 10px;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    box-shadow: var(--shadow-post);
+}
+.header_post{
+    height: 72%;
+    overflow-y: scroll;
+}
+.header_post::-webkit-scrollbar{
+    display: none;
+}
+/* Ảnh bài viết */
+.posts .post-image{
+    width: 50%;
+}
+.posts .post-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-post) 0px 0px var(--border-post);
+}
+/* Nội dung bài viết */
+.content-post{
+    width: 50%;
+    padding: 13px;
+    position: relative;
+}
+.content-post .top_content_post{
+    width: 100%;
+    height: 9%;
+    display: flex;
+    justify-content: space-between;
+}
+.top_content_post .avtar-name_user{
+    display: flex;
+}
+.top_content_post .avatar img{
+    width: 45px;
+}
+.top_content_post .name-user{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.top_content_post .name-user:hover h3{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.top_content_post .setting_post{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.top_content_post .setting_post i{
+    font-size: 20px;
+    color: #d0d0d0;
+}
+.top_content_post .setting_post i:hover{
+    color: #000;
+    cursor: pointer;
+}
+.center_content_post{
+    width: 100%;
+    margin-top: 10px;
+    overflow-y: hidden;
+}
+.center_content_post p{
+    font-size: 18px;
+    line-height: 30px;
+    height: 60%;
+}
+
+/* Chức năng tym,bình luận, chia sẻ, vote */
+.bottom_content_post{
+    position: relative;
+    bottom: -46px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+}
+.function_left{
+    margin-top: 10px;
+}
+.function_right{
+    margin-top: 5px;
+}
+.favourite-post,
+.comment-post,
+.share-post{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.bottom_content_post .function_left{
+    display: flex;
+}
+.bottom_content_post .function_left i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.function_left .share-post .bi::before{
+    transform: rotateY(180deg);
+    font-size: 27px;
+}
+.function_left .favourite-post i{
+    padding-left: 8px;
+}
+.function_left .favourite-post:hover{
+    color: var(--color-heart);
+}
+.function_left .comment-post i{
+    padding-left: 4px;
+}
+.function_left .comment-post:hover{
+    color: var(--color-purple);
+}
+.function_left .share-post{
+    margin-top: -3px;
+}
+.function_left .share-post i{
+    padding-left: 3px;
+}
+.function_left .share-post:hover{
+    color: var(--main-color);
+}
+
+/* Chức năng vote */
+.bottom_content_post .function_right{
+    display: flex;
+}
+.function_right i{
+    font-size: 40px;
+    color: #bbbbbb;
+}
+.function_right i:hover{
+    color: #383838;
+    cursor: pointer;
+}
+.function_right .count_vote{
+    padding: 10px 20px;
+}
+
+/* Phần tin nhắn và yêu cầu */
+#message-request{
+    width: 21%;
+}
+.message{
+    width: 100%;
+    /* background-color: #fff; */
+    padding: 13px;
+}
+.header_message{
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+.header_message .search{
+    margin-top: 15px;
+}
+.header_message .search input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid grey;
+    background: none;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 0 50px;
+}
+.header_message .search .icon-search{
+    width: 23px;
+    position: absolute;
+    padding-top: 8px;
+    margin-left: 10px;
+}
+.list_chat{
+    margin-top: 13px;
+    width: 100%;
+    overflow-y: scroll;
+}
+.list_chat::-webkit-scrollbar{
+    display: none;
+}
+.message_user{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    cursor: pointer;
+}
+.message_user:hover{
+    border-radius: 5px;
+    background-color: #e4e4e4;
+}
+.message_user .avatar_user{
+    position: relative;
+}
+.message_user .avatar_user img{
+    width: 37px;
+    height: 37px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.message_user .avatar_user .status_online{
+    width: 12px;
+    height: 12px;
+    margin-top: -18px;
+    margin-left: 34px;
+    background-color: #46ff68;
+    border-radius: 50px;
+    position: absolute;
+}
+.message_user .infor_user{
+    overflow: hidden;
+}
+.message_user .infor_user .name_user{
+    width: 220px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.message_user .infor_user .short_message{
+    width: 220px;
+    height: 19px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 20px;
+    padding-top: 3px;
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+}
+.setting_message{
+    padding-top: 9px;
+}
+.setting_message i{
+    padding-left: -7px;
+    font-size: 18px;
+}
+/* Phần yêu cầu follow */
+.request{
+    width: 100%;
+    height: 60vh;
+    /* background-color: #fff; */
+    margin-top: 20px;
+    padding: 13px;
+}
+.header_request{
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding-bottom: 5px;
+}
+/* Phần thông tin người gửi yêu cầu */
+.request_user{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+/* .request_user:hover{
+    background-color: #ebebeb;
+    cursor: pointer;
+} */
+.request_user .avatar_infor_user{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+.avatar_infor_user .row_request{
+    display: flex;
+}
+.avatar_infor_user .avatar_user img{
+    width: 45px;
+    height: 45px;
+}
+.avatar_infor_user .infor_user{
+    padding-top: 3px;
+    padding-left: 10px;
+}
+.infor_user a{
+    text-decoration: none;
+    color: #000;
+}
+.infor_user .name_user:hover{
+    color: #5c5c5c;
+    cursor: pointer;
+}
+.infor_user .request_time{
+    font-size: 12px;
+    color: #818181;
+}
+.avatar_infor_user .setting_request{
+    font-size: 20px;
+    color: #bbbbbb;
+}
+.avatar_infor_user .setting_request:hover{
+    color: #000;
+    cursor: pointer;
+}
+/* Chấp nhận, từ chối yêu cầu */
+.request_user .request_action{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.request_action .accept{
+    width: 100px;
+    height: 35px;
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.request_action .reject{
+    width: 100px;
+    height: 35px;
+    background-color: #e4e4e4;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.request_action .accept:hover{
+    background-color: #004c6c;
+    cursor: pointer;
+}
+.request_action .reject:hover{
+    background-color: #818181;
+}

@@ -1,0 +1,138 @@
+@media only screen and (min-width: 1400px) {
+    /* #contents {
+        width: 791px;
+        margin-left: 274px;
+        position: relative;
+    } */
+}
+@media (max-width: 1399px){
+    #contents {
+        width: 790px;
+        position: relative;
+    }
+}
+@media (max-width: 1398px){
+    #contents{
+        width: 600px;
+        margin: 0;
+    }
+    .top-content{
+
+    }
+    .top-content .personal-page h3{
+        display: none;
+    }
+    .posts{
+        height: auto;
+        display: block;
+        box-shadow: 0px 0px 5px rgb(205, 205, 205);
+    }
+    .posts .post-image{
+        width: 100%;
+        height: 450px;
+    }
+    .posts .post-image img{
+        width: 100%;
+        border-radius: var(--border-post) var(--border-post) 0px 0px;
+    }
+    .posts .content-post{
+        width: 100%;
+        position: relative;
+    }
+    .content-post .header_post .center_content_post{
+        padding-bottom: 20px;
+        
+    }
+    .header_post .center_content_post p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 25px;
+        -webkit-line-clamp: 2;
+        height: 55px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+    .posts .content-post .bottom_content_post{
+        position: relative;
+        bottom: 0;
+    }
+}
+@media (max-width: 1200px){
+    #contents{
+        position: relative;
+        left: 42%;
+        transform: translateX(-50%);
+    }
+    #side-bar_left{
+        width: 105px;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+    }
+    #message-request{
+        width: 27%;
+    }
+    #side-bar_left .menu-control{
+
+    }
+    .menu-control ul li a{
+        display: none;
+    }
+    .addPost_button{
+        width: 69px;
+    }
+    /* Ẩn button tạo bài viết có chữ */
+    .fix_position_side_bar .addPost_button .btn_create_post{
+        visibility: hidden;
+    }
+    /* Hiện button tạo bài viết icon */
+    .fix_position_side_bar .addPost_button .btn_create_post_icon{
+        visibility: visible;
+    }
+    .fix_position_side_bar .addPost_button button .plus-icon{
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 986px){
+    #contents {
+        position: relative;
+        left: 41%;
+        transform: translateX(-50%);
+    }
+    #side-bar_left{
+        width: 62px;
+        height: 100vh;
+        padding: 10px;
+        background-color: #fff;
+        position: fixed;
+    }
+   .fix_position_side_bar .logo img{
+    width: 35px;
+    height: 35px;
+    margin-left: 3px;
+   }
+   .fix_position_side_bar .menu-control{
+   }
+   .menu-control ul li{
+    width: 40px;
+    height: 40px;
+    padding: 5px 0px;
+   }
+   .menu-control ul li .icon-menu{
+    font-size: 22px;
+    padding-left: 8px;
+    padding-top: 2px;
+   }
+   .menu-control ul li .count_notification{
+    margin-top: -39px;
+    margin-left: 20px;
+   }
+   .fix_position_side_bar .addPost_button .btn_create_post_icon{
+    width: 42px;
+    height: 42px;
+    }
+}
+@media (max-width: 910px){
+    
+}

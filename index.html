@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responesive.css">
+    <title>bequote</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="side-bar_left">
+            <div class="fix_position_side_bar">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="">
+                </div>
+                <div class="menu-control">
+                    <ul>
+                        <li><i class="bi bi-house icon-menu"></i><a href="">Trang chủ</a></li>
+                        <li>
+                            <div>
+                                <i class="bi bi-bell icon-menu"></i>
+                                <div class="count_notification">9+</div>
+                            </div>
+                            <a href="">Thông báo</a>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="bi bi-chat icon-menu"></i>
+                                <div class="count_notification">9+</div>
+                            </div>
+                            <a href="">Tin nhắn</a>
+                        </li>
+                        <li><i class="bi bi-heart icon-menu"></i><a href="">Yêu thích</a></li>
+                        <li><i class="bi bi-gear icon-menu"></i><a href="">Cài đặt</a></li>
+                    </ul>
+                </div>
+                <div class="addPost_button">
+                    <button class="btn_create_post_icon"><i class="bi bi-plus plus-icon"></i></button>
+                    <button class="btn_create_post">Tạo bài viết</button>
+                </div>
+            </div>
+        </div>
+        <div id="contents">
+            <div class="top-content">
+                <div class="search">
+                    <img class="icon-search" src="assets/img/search-icon.png" alt="">
+                    <input type="search" placeholder="Nhập từ khóa tìm kiếm" name="" id="">
+                </div>
+                <div class="personal-page">
+                    <a href="">
+                        <h3 class="user-name">Nguyễn Tiến Quân</h3>
+                    </a>
+                    <a href=""><img class="user-avatar" src="assets/img/user avatar.png" alt=""></a>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="post-image">
+                    <img src="assets/img/post_image2.png" alt="">
+                </div>
+                <div class="content-post">
+                    <div class="top_content_post">
+                        <div class="avtar-name_user">
+                            <div class="avatar">
+                                <img src="assets/img/avatar user post.png" alt="">
+                            </div>
+                            <div class="name-user">
+                                <h3>Sery sanbed</h3>
+                            </div>
+                        </div>  
+                        <div class="setting_post">
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                    </div>
+                    <div class="header_post">
+                        <div class="center_content_post">
+                            <p>It is a long established fact that a reader will
+                                be distracted by the readable content of a page when looking
+                                at its layout. It is a long established fact that a reader will
+                                be distracted by the readable content of a page when looking
+                                at its layout.</p>
+                        </div>
+                    </div>
+                    <div class="bottom_content_post">
+                        <div class="function_left">
+                            <div class="favourite-post">
+                                <i class="bi bi-heart favourite"></i>
+                                <p class="count-favourite">25.5k</p>
+                            </div>
+                            <div class="comment-post">
+                                <i class="bi bi-chat-square"></i>
+                                <p class="count-comment">3.5k</p>
+                            </div>
+                            <div class="share-post">
+                                <i class="bi bi-reply"></i>
+                                <p class="count-share">3000</p>
+                            </div>
+                        </div>
+                        <div class="function_right">
+                            <i class="bi bi-caret-up-fill"></i>
+                            <p class="count_vote">12</p>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phần tin nhắn và yêu cầu -->
+        <div id="message-request">
+            <div class="message">
+                <div class="header_message">
+                    <h2>Tin nhắn</h2>
+                    <div class="search">
+                        <img class="icon-search" src="assets/img/search-icon.png" alt="">
+                        <input type="search" placeholder="Tìm kiếm tin nhắn" name="" id="">
+                    </div>
+                </div>
+                <div class="list_chat">
+                    <div class="message_user">
+                        <div class="avatar_user">
+                            <a href=""><img src="assets/img/message avatar user.png" alt=""></a>
+                            <div class="status_online"></div>
+                        </div>
+
+                        <div class="infor_user">
+                            <a href="">
+                                <h3 class="name_user">Bernard Fisher</h3>
+                            </a>
+                            <p class="short_message">It is a long established fact that</p>
+                        </div>
+                        <div class="setting_message"><i class="bi bi-three-dots"></i></div>
+                    </div>
+                    <div class="message_user">
+                        <div class="avatar_user">
+                            <a href=""><img src="assets/img/avatar_message2.png" alt=""></a>
+                        </div>
+                        <div class="infor_user">
+                            <a href="">
+                                <h3 class="name_user">Bevis Mitchell</h3>
+                            </a>
+                            <p class="short_message">It is a long established fact that</p>
+                        </div>
+                        <div class="setting_message"><i class="bi bi-three-dots"></i></div>
+                    </div>
+                    <div class="message_user">
+                        <div class="avatar_user">
+                            <a href=""><img src="assets/img/avatar_message3.png" alt=""></a>
+                            <div class="status_online"></div>
+                        </div>
+
+                        <div class="infor_user">
+                            <a href="">
+                                <h3 class="name_user">Joe Adams</h3>
+                            </a>
+                            <p class="short_message">It is a long established fact that</p>
+                        </div>
+                        <div class="setting_message"><i class="bi bi-three-dots"></i></div>
+                    </div>
+                    <div class="message_user">
+                        <div class="avatar_user">
+                            <a href=""><img src="assets/img/avatar_message4.png" alt=""></a>
+                        </div>
+
+                        <div class="infor_user">
+                            <a href="">
+                                <h3 class="name_user">Venn Lopez</h3>
+                            </a>
+                            <p class="short_message">It is a long established fact that</p>
+                        </div>
+                        <div class="setting_message"><i class="bi bi-three-dots"></i></div>
+                    </div>
+                    <div class="message_user">
+                        <div class="avatar_user">
+                            <a href=""><img src="assets/img/avatar_message5.png" alt=""></a>
+                            <div class="status_online"></div>
+                        </div>
+
+                        <div class="infor_user">
+                            <a href="">
+                                <h3 class="name_user">Luis Eriksen</h3>
+                            </a>
+                            <p class="short_message">It is a long established fact that</p>
+                        </div>
+                        <div class="setting_message"><i class="bi bi-three-dots"></i></div>
+                    </div>
+                    <div class="message_user">
+                        <div class="avatar_user">
+                            <a href=""><img src="assets/img/avatar_message6.png" alt=""></a>
+                            <div class="status_online"></div>
+                        </div>
+
+                        <div class="infor_user">
+                            <a href="">
+                                <h3 class="name_user">Bevis Mitchell</h3>
+                            </a>
+                            <p class="short_message">It is a long established fact that</p>
+                        </div>
+                        <div class="setting_message"><i class="bi bi-three-dots"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="request">
+                <div class="header_request">
+                    <h2>Yêu cầu</h2>
+                </div>
+                <div class="request_user">
+                    <div class="avatar_infor_user">
+                        <div class="row_request">
+                            <div class="avatar_user">
+                                <a href=""><img src="assets/img/request_avatar_user.png" alt=""></a>
+                            </div>
+                            <div class="infor_user">
+                                <a href="">
+                                    <h3 class="name_user">Harvey Nelson</h3>
+                                </a>
+                                <p class="request_time">8 phút trước</p>
+                            </div>
+                        </div>
+                        <div class="setting_request"><i class="bi bi-three-dots"></i></div>
+                    </div>
+                    <div class="request_action">
+                        <button class="accept">Chấp nhận</button>
+                        <button class="reject">Từ chối</button>
+                    </div>
+                </div>
+                <div class="request_user">
+                    <div class="avatar_infor_user">
+                        <div class="row_request">
+                            <div class="avatar_user">
+                                <a href=""><img src="assets/img/request_avatar_user2.png" alt=""></a>
+                            </div>
+                            <div class="infor_user">
+                                <a href="">
+                                    <h3 class="name_user">Azaria Holmes</h3>
+                                </a>
+                                <p class="request_time">12 phút trước</p>
+                            </div>
+                        </div>
+                        <div class="setting_request"><i class="bi bi-three-dots"></i></div>
+                    </div>
+                    <div class="request_action">
+                        <button class="accept">Chấp nhận</button>
+                        <button class="reject">Từ chối</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

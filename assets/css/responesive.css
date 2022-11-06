@@ -134,5 +134,16 @@
     }
 }
 @media (max-width: 910px){
-    
+    #contents {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #message-request{
+        width: 0px;
+        display: none;
+    }
+    .request{
+        display: none;
+    }
 }
